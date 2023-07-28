@@ -1,0 +1,9 @@
+<aside id="shared-aside">
+    <h3 class="text-2xl font-bold p-1 text-slate-200">GifsApp</h3>
+    <hr class="border border-gray-300">
+
+    <ul class="flex flex-col items-center space-y-5 py-5">
+        <button class="w-3/4 bg-slate-100 p-2 rounded-lg text-black" (click)="searchFromHistory(item)" *ngFor="let item of historyOfSearchs">{{item | titlecase }}</button>
+    </ul>
+</aside>
+
